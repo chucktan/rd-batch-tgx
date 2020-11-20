@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.rd.batch.pojo.RdBatchProjectMapper" >
+  <resultMap id="BaseResultMap" type="com.rd.batch.pojo.RdBatchProject" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SERIALNO" property="serialno" jdbcType="INTEGER" />
+    <id column="TASKNO" property="taskno" jdbcType="INTEGER" />
+    <result column="RELATIVEMODELNO" property="relativemodelno" jdbcType="INTEGER" />
+    <result column="CORN" property="corn" jdbcType="VARCHAR" />
+    <result column="CONTENT" property="content" jdbcType="VARCHAR" />
+    <result column="ISUSE" property="isuse" jdbcType="INTEGER" />
+    <result column="CREATED_BY" property="createdBy" jdbcType="VARCHAR" />
+    <result column="CREATED_TIME" property="createdTime" jdbcType="VARCHAR" />
+    <result column="UPDATED_BY" property="updatedBy" jdbcType="VARCHAR" />
+    <result column="UPDATED_TIME" property="updatedTime" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

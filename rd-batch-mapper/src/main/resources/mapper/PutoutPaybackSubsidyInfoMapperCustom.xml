@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.rd.batch.mapper.PutoutPaybackSubsidyInfoMapperCustom" >
+
+
+
+    <select id="getPutoutPaybackSubsidy"  statementType="CALLABLE"  parameterType="Map">
+        {call REPORTFORMS.GET_PUTOUT_PAYBACK_SUBSIDY(#{paramsMap.batchDate,mode=IN,jdbcType=DATE},#{paramsMap.PJSerialNo,mode=IN,jdbcType=INTEGER},#{paramsMap.PJTaskNo,mode=IN,jdbcType=INTEGER})}
+    </select>
+
+    <select id="getPutoutPaybackSubsidyNotUse1" parameterType="Map"  statementType="CALLABLE"  resultType="int">
+        {call REPORTFORMS.GET_PUTOUT_PAYBACK_SUBSIDY(#{paramsMap.o_msg,mode = OUT,jdbcType = VARCHAR})}
+    </select>
+
+
+    <select id="getPutoutPaybackSubsidyNotUse" parameterType="Map"  resultType="int">
+        select  count (1) from  REPORTFORMS.PUTOUT_PAYBACK_SUBSIDY_INFO
+            where UPDATED_TIME = #{paramsMap.updateTime}
+    </select>
+
+</mapper>

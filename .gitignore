@@ -1,0 +1,6 @@
+# Project exclude paths
+/rd-batch-api/target/
+/rd-batch-common/target/
+/rd-batch-mapper/target/
+/rd-batch-pojo/target/
+/rd-batch-service/target/

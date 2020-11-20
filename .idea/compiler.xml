@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="rd-batch-common" />
+        <module name="rd-cloudcounter-api" />
+        <module name="rd-cloudcounter-pojo" />
+        <module name="rd-batch-api" />
+        <module name="rd-batch-mapper" />
+        <module name="rd-cloudcounter-service" />
+        <module name="rd-cloudcounter-mapper" />
+        <module name="rd-batch-service" />
+        <module name="rd-cloudcounter-common" />
+        <module name="rd-batch-pojo" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="rd-batch-api" options="-parameters" />
+      <module name="rd-batch-common" options="-parameters" />
+      <module name="rd-batch-mapper" options="-parameters" />
+      <module name="rd-batch-pojo" options="-parameters" />
+      <module name="rd-batch-service" options="-parameters" />
+      <module name="rd-cloudcounter-api" options="-parameters" />
+      <module name="rd-cloudcounter-common" options="-parameters" />
+      <module name="rd-cloudcounter-mapper" options="-parameters" />
+      <module name="rd-cloudcounter-pojo" options="-parameters" />
+      <module name="rd-cloudcounter-service" options="-parameters" />
+    </option>
+  </component>
+</project>

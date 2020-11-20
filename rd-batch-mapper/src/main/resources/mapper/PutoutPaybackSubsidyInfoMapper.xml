@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.rd.batch.mapper.PutoutPaybackSubsidyInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.rd.batch.pojo.PutoutPaybackSubsidyInfo" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="SERIALNO" property="serialno" jdbcType="INTEGER" />
+    <result column="CUSTOMERID" property="customerid" jdbcType="VARCHAR" />
+    <result column="PUTOUT_DUEBILLNO" property="putoutDuebillno" jdbcType="VARCHAR" />
+    <result column="LICENSENO" property="licenseno" jdbcType="VARCHAR" />
+    <result column="PUTOUT_BALANCE" property="putoutBalance" jdbcType="DECIMAL" />
+    <result column="PUTOUT_DATE" property="putoutDate" jdbcType="VARCHAR" />
+    <result column="PAYBACK_DUEBILLNO" property="paybackDuebillno" jdbcType="VARCHAR" />
+    <result column="PAYBACK_CONTRACTNO" property="paybackContractno" jdbcType="VARCHAR" />
+    <result column="PAYBACK_BALANCE" property="paybackBalance" jdbcType="DECIMAL" />
+    <result column="PAYBACK_DATE" property="paybackDate" jdbcType="VARCHAR" />
+    <result column="MANAGERUSERID" property="manageruserid" jdbcType="VARCHAR" />
+    <result column="MANAGERORGID" property="managerorgid" jdbcType="VARCHAR" />
+    <result column="CREATED_BY" property="createdBy" jdbcType="VARCHAR" />
+    <result column="CREATED_TIME" property="createdTime" jdbcType="VARCHAR" />
+    <result column="UPDATED_BY" property="updatedBy" jdbcType="VARCHAR" />
+    <result column="UPDATED_TIME" property="updatedTime" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>
